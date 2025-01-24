@@ -27,10 +27,10 @@ watchdog
   * Stop debugging with Shift-F5
 
 ## 🤝 Contributors
-- 📺 **Nouman Munib:** [Linkedin] () [Github] ()
-- 💬 **Giselle:** [Linkedin] () [Github] ()
-- 💼 **Federic:** [Linkedin] () [Github] ()
-- 🌐**Amina:** [Linkedin] ()
+- 🌐 **Nouman Munib:** [Linkedin] () [Github] ()
+- 🌐 **Giselle:** [Linkedin] () [Github] ()
+- 🌐 **Federic:** [Linkedin] () [Github] ()
+- 🌐 **Amina:** [Linkedin] ()
 
 ## Feedback & Collaboration
 For feedback, suggestions, or potential collaboration opportunities, reach out!
