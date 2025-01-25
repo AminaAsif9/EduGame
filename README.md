@@ -1,10 +1,12 @@
 # ScholarShelf - AI in Education 
 ScholarShelf is an adaptive learning tool that uses AI to personalize the learning experience for you.
 
+
 ## 🌟 Overview
 * Build your own digital library by uploading books to your shelf.
 * Ask our SchoBot anything, and It'll fetch answers directly from your collection!
 * Easy and Fun way to learn!
+
 
 ## 🚀 Key Features
 **💬 AI-Powered Chat Interface:** Interact with ScholarShelf for personalized learning assistance and real-time answers.
@@ -13,20 +15,26 @@ ScholarShelf is an adaptive learning tool that uses AI to personalize the learni
 
 **🧠 Real-time Situation Assessment:** Receive tailored responses and advice based on AI analysis of current collection and user input.
 
+
 ## 👤 Our users and why?
 **Students** (Of all Levels, from Elementary to High School, University, Postgraduate)
   *Need: Exam Preparation, Homework Help, Quick Summaries and Essays.
+  
 **Professionals** (Lawyers, Doctors, Engineers, Researchers)
   *Need: Rapid Retrieval of Critical Data, Case Studies, or Guidelines.
+  
 **Educators and Trainers**
   *Need: They can create Custom Learning Plans based on selected Educational Resources.
+  
 **Lifelong Learners**
   *Need: Self-Paced and Self-Designed Learning across various topics of Interest.
+
 
 ## 🛠️ Tech Stack
 * **Frontend:** Streamlit - for the development of interactive and user-friendly web application.
 * **Backend:** Python - leveraging its rich ecosystem of data science and AI libraries.
 * **AI/ML:** AI/ML API Models (DeepSeek R1) - an advanced reasoning model that outperforms competitors with high efficiency and open-source accessibility for developers.
+
 
 ## 🚀 Quick Start
 # Live Demo
