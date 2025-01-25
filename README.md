@@ -1,5 +1,5 @@
-# EduGame - AI in Education
-EduGame is an adaptive learning tool that uses AI to personalize the learning experience for students. 
+# ScholarShelf - AI in Education
+ScholarShelf is an adaptive learning tool that uses AI to personalize the learning experience for students. 
 
 ## Requirements
 ```
@@ -29,8 +29,8 @@ watchdog
 ## 🤝 Contributors
 - 🌐 **Nouman Munib:** [Linkedin] () [Github] ()
 - 🌐 **Giselle:** [Linkedin] () [Github] ()
-- 🌐 **Federic:** [Linkedin] () [Github] ()
-- 🌐 **Amina:** [Linkedin] ()
+- 🌐 **Federica:** [Linkedin] () [Github] ()
+- 🌐 **Amina:** [Linkedin] () [Github] ()
 
 ## Feedback & Collaboration
 For feedback, suggestions, or potential collaboration opportunities, reach out!
