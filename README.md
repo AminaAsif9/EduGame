@@ -19,19 +19,19 @@ ScholarShelf is an adaptive learning tool that uses AI to personalize the learni
 ## 👤 Our users and why?
 **Students** - (Of all Levels, from Elementary to High School, University, Postgraduate)
 
-  *Need: Exam Preparation, Homework Help, Quick Summaries and Essays.
+  * Need: Exam Preparation, Homework Help, Quick Summaries and Essays.
   
 **Professionals** - (Lawyers, Doctors, Engineers, Researchers)
 
-  *Need: Rapid Retrieval of Critical Data, Case Studies, or Guidelines.
+  * Need: Rapid Retrieval of Critical Data, Case Studies, or Guidelines.
   
 **Educators and Trainers**
 
-  *Need: They can create Custom Learning Plans based on selected Educational Resources.
+  * Need: They can create Custom Learning Plans based on selected Educational Resources.
   
 **Lifelong Learners**
 
-  *Need: Self-Paced and Self-Designed Learning across various topics of Interest.
+  * Need: Self-Paced and Self-Designed Learning across various topics of Interest.
 
 
 ## 🛠️ Tech Stack
@@ -44,40 +44,46 @@ ScholarShelf is an adaptive learning tool that uses AI to personalize the learni
 # Live Demo
 * Clone the Repository
   
-```git clone https://github.com/AminaAsif9/ScholarShelf.git```
+```
+git clone https://github.com/AminaAsif9/ScholarShelf.git
+```
 
 * Create and activate a Virtual Environment
   
 ```
-    python -m venv venv
+python -m venv venv
 
 # Windows command prompt
-    .venv\Scripts\activate.bat
+.venv\Scripts\activate.bat
 
 # Windows PowerShell
-    .venv\Scripts\Activate.ps1
+.venv\Scripts\Activate.ps1
 
 # macOS and Linux
-    source .venv/bin/activate
+source .venv/bin/activate
 ```
 
 * Install Dependencies
   
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 * Run the Application
   
-    ```
-    # vanilla terminal
-    streamlit run app.py
+```
+# vanilla terminal
+streamlit run app.py
 
-    # quit
-    ctrl-c
-    ```
+# quit
+ctrl-c
+```
     
 * Access the application once the app is running, open it in your browser at:
   
-```http://localhost:8501```
+```
+http://localhost:8501
+```
 
 
 ## 🛠️ Usage
