@@ -8,7 +8,9 @@ ScholarShelf is an adaptive learning tool that uses AI to personalize the learni
 
 ## 🚀 Key Features
 **💬 AI-Powered Chat Interface:** Interact with ScholarShelf for personalized learning assistance and real-time answers.
+
 **📱 Offline Functionality:** Access guides and other documents without an internet connection, ensuring help is always available.
+
 **🧠 Real-time Situation Assessment:** Receive tailored responses and advice based on AI analysis of current collection and user input.
 
 ## 👤 Our users and why?
