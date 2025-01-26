@@ -37,7 +37,7 @@ def render_homepage():
         left_column, right_column = st.columns(2)
         with left_column:
             st.title("Welcome to ScholarShelf!")
-            st.write("Your one-stop platform for tailored learning experiences.")
+            st.write("Your AI-Powered Companion for Smarter, Faster Knowledge Discovery.")
             st.write("##")
 
 
