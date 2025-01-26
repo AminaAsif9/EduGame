@@ -1,6 +1,7 @@
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
+from PIL import Image
 
 # Import the new no-embeddings backend
 import scho_backend as backend
@@ -24,7 +25,7 @@ local_css("style/style.css")
 lottie_bot = load_lottieurl("https://lottie.host/668636f4-92fc-4f23-bc3b-4cc4a00e3604/fNTNcqHty9.json")
 lottie_main = load_lottieurl("https://lottie.host/accf15ff-6219-42b5-af4b-51d5adf09168/dUSw7cGNNG.json")
 lottie_log = load_lottieurl("https://lottie.host/edd2bf86-25e5-4be1-aff1-8d3769b38c8a/NI6Fi27xCo.json")
-
+image = Image.open('logo-t.png')
 
 # ---- BACKEND STARTUP: LOAD ANY SAVED CHUNKS (optional)
 backend.load_chunks_from_disk()
@@ -39,8 +40,11 @@ def render_homepage():
             st.write("Your one-stop platform for tailored learning experiences.")
             st.write("##")
 
+
         with right_column:
-            st_lottie(lottie_log, height=300, key="greet")
+            # st_lottie(lottie_log, height=300, key="greet")
+            st.image(image, width=300)  
+
     
     # User categories
     user_type = st.selectbox(
