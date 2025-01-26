@@ -23,33 +23,69 @@ local_css("style/style.css")
 # ---- LOAD ASSETS ----
 lottie_bot = load_lottieurl("https://lottie.host/668636f4-92fc-4f23-bc3b-4cc4a00e3604/fNTNcqHty9.json")
 lottie_main = load_lottieurl("https://lottie.host/accf15ff-6219-42b5-af4b-51d5adf09168/dUSw7cGNNG.json")
+lottie_log = load_lottieurl("https://lottie.host/edd2bf86-25e5-4be1-aff1-8d3769b38c8a/NI6Fi27xCo.json")
+
 
 # ---- BACKEND STARTUP: LOAD ANY SAVED CHUNKS (optional)
 backend.load_chunks_from_disk()
 
-# ---- HEADER SECTION ----
-with st.container():
-    st_lottie(lottie_main, height=350, key="main")
-    st.title("📑 ScholarShelf")
-    st.subheader("Hi, I am SchoBot! 🤖 :wave:")
-    st.write(
-        "An adaptive learning tool, here to personalize the learning experience for you."
+
+# Function to render the homepage
+def render_homepage():
+    with st.container():
+        left_column, right_column = st.columns(2)
+        with left_column:
+            st.title("Welcome to ScholarShelf!")
+            st.write("Your one-stop platform for tailored learning experiences.")
+            st.write("##")
+
+        with right_column:
+            st_lottie(lottie_log, height=300, key="greet")
+    
+    # User categories
+    user_type = st.selectbox(
+        "Who are you?",
+        ["Select", "Student", "Professional", "Educator"]
     )
 
-# ---- SECTION ----
-with st.container():
-    st.write("---")
-    left_column, right_column = st.columns(2)
-    with left_column:
-        st.header("Try Your-Shelf!")
-        st.write("##")
+    if user_type in ["Student", "Professional", "Educator"]:
+        main_dashboard()
 
-        # File Upload
-        uploaded_file = st.file_uploader("Upload your file", type=["txt", "pdf", "docx"], accept_multiple_files=True)
-        if uploaded_file:
-            if st.button("Process Upload"):
-                result_msg = backend.process_files(uploaded_file)  # Updated function name
-                st.success(result_msg)
+# Main Dashboard
+def main_dashboard():
+# ---- HEADER SECTION ----
+    with st.container():
+        st.write("##")
+        st_lottie(lottie_main, height=350, key="main")
+        st.title("📑 ScholarShelf")
+        st.subheader("Hi, I am SchoBot! 🤖 :wave:")
+        st.write(
+            "An adaptive learning tool, here to personalize the learning experience for you."
+        )
+        st.write(
+            """
+            - Build your own digital library by uploading books to your shelf.
+            - Ask me anything, and I'll fetch answers directly from your collection!
+            - Easy and Fun way to learn!
+
+            Sounds interesting? Try now!!!
+            """
+        )
+
+    # ---- SHELF SECTION ----
+    with st.container():
+        st.write("---")
+        left_column, right_column = st.columns(2)
+        with left_column:
+            st.header("Build Your-Shelf! :books:")
+            st.write("##")
+
+            # File Upload
+            uploaded_file = st.file_uploader("Upload your file(s)", type=["txt", "pdf", "docx"], accept_multiple_files=True)
+            if uploaded_file:
+                if st.button("Process Upload"):
+                    result_msg = backend.process_files(uploaded_file)  # Updated function name
+                    st.success(result_msg)
 
         # Initialize chat history
         if "messages" not in st.session_state:
@@ -74,23 +110,9 @@ with st.container():
                 st.markdown(response)
             st.session_state.messages.append({"role": "assistant", "content": response})
 
-    with right_column:
-        st_lottie(lottie_bot, height=300, key="bot")
+        with right_column:
+            st_lottie(lottie_bot, height=300, key="bot")
 
-# ---- MAIN ----
-with st.container():
-    st.write("##")
-    st.write("---")
-    st.header("What I do?")
-    st.write(
-        """
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-        - (add details, if needed)
-        - are looking for a way to .............
-        - are struggling with tasks ...........
-        - want to learn ...................
-        - Iure facere unde explicabo, cumque animi doloribus commodi voluptatibus deleniti?
-        
-        Sounds interesting?
-        """
-    )
+# Run the Streamlit app
+if __name__ == "__main__":
+    render_homepage()
