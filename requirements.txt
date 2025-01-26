@@ -4,7 +4,6 @@ Pillow
 protobuf
 watchdog
 streamlit-lottie
-PIL
 openai
 PyPDF2
 numpy
