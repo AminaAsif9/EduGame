@@ -2,7 +2,7 @@ import os
 import re
 import tempfile
 import json
-from pypdf import PdfReader
+from PyPDF2 import PdfReader
 from openai import OpenAI
 
 #########################
